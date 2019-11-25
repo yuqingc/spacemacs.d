@@ -53,12 +53,13 @@ This function should only modify configuration layer settings."
      spell-checking
      syntax-checking
      treemacs
-     ;; version-control
+     version-control
      (javascript :variables
                  javascript-backend 'lsp
                  javascript-import-tool 'import-js
                  js2-basic-offset 2
                  js-indent-level 2)
+     yaml
      )
 
    ;; List of additional packages that will be installed without being
@@ -68,7 +69,7 @@ This function should only modify configuration layer settings."
    ;; To use a local version of a package, use the `:location' property:
    ;; '(your-package :location "~/path/to/your-package/")
    ;; Also include the dependencies as they will not be resolved automatically.
-   dotspacemacs-additional-packages '()
+   dotspacemacs-additional-packages '(vue-mode)
 
    ;; A list of packages that cannot be updated.
    dotspacemacs-frozen-packages '()
@@ -211,7 +212,7 @@ It should only modify the values of Spacemacs settings."
 
    ;; Default font or prioritized list of fonts.
    dotspacemacs-default-font '("Source Code Pro"
-                               :size 10.0
+                               :size 11.0
                                :weight normal
                                :width normal)
 
